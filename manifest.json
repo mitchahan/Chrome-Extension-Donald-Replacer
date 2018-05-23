@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Donald Replacer",
+	"version": "1.0",
+	"description": "Fuck Donald Trump.",
+	"icons": { "16": "images/Donald16x16.jpg",
+           "48": "images/Donald48x48.jpg",
+          "128": "images/Donald128x128.jpg" },
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["myscript.js"],
+			"run_at": "document_end"
+		}
+	]
+}
